@@ -1,6 +1,6 @@
-# Dee::Rails
+# dee-rails
 
-Dee the DI Container for Rails
+[Dee](https://github.com/yuya-takeyama/dee) the DI Container for Rails
 
 ## Installation
 
