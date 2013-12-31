@@ -34,7 +34,7 @@ describe Dee::Rails do
     describe 'Dee["foo.singleton"]' do
       it 'should be a Foo object' do
         expect(Dee['foo.singleton']).to be_a(Foo)
-        expect(Dee['foo.singleton'].name).to be_eql('FOO')
+        expect(Dee['foo.singleton'].name).to eq('FOO')
       end
 
       it 'should be always identical' do
@@ -45,7 +45,7 @@ describe Dee::Rails do
     describe 'Dee["foo.factory"]' do
       it 'should be a Foo object' do
         expect(Dee['foo.factory']).to be_a(Foo)
-        expect(Dee['foo.factory'].name).to be_eql('FOO')
+        expect(Dee['foo.factory'].name).to eq('FOO')
       end
 
       it 'should not be identical' do
