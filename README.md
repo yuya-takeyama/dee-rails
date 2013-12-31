@@ -1,6 +1,9 @@
-# Dee::Rails
+# dee-rails
 
-TODO: Write a gem description
+[![Build Status](https://travis-ci.org/yuya-takeyama/dee-rails.png?branch=develop)](https://travis-ci.org/yuya-takeyama/dee-rails)
+[![Coverage Status](https://coveralls.io/repos/yuya-takeyama/dee-rails/badge.png?branch=develop)](https://coveralls.io/r/yuya-takeyama/dee-rails?branch=develop)
+
+[Dee](https://github.com/yuya-takeyama/dee) the DI Container for Rails
 
 ## Installation
 
@@ -18,7 +21,45 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Defining service provider
+
+Write your service provider using generator.
+
+    $ rails g dee:service_provider foo
+    $ vi app/providers/foo_service_provider.rb
+
+```ruby
+class FooServceProvider < Dee::Rails::ServiceProvider
+  provide do
+    # Configuration parameter
+    self['foo.name'] = 'FOO'
+
+    # Singleton service
+    singleton 'foo' do
+      Foo.new self['foo.name']
+    end
+
+    # Service
+    factory 'bar' do
+      Bar.new
+    end
+  end
+end
+```
+
+### Using service
+
+You can access services defined in provider using `Dee` object.
+
+```ruby
+class FooController < ApplicationController
+  def show
+    foo = Dee['foo']
+
+    # Some instructions using Foo object
+  end
+end
+```
 
 ## Contributing
 
