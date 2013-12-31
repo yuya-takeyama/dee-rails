@@ -6,7 +6,7 @@ require "dee/rails/version"
 
 module Dee
   module Rails
-    def setup!
+    def self.setup!
       ::Dee.extend self
       ::Dee.container = ::Dee::Container.new
       ::Dee::Rails::Loader.load!
