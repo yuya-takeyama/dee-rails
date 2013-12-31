@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Dee::Rails::VERSION
   spec.authors       = ["Yuya Takeyama"]
   spec.email         = ["sign.of.the.wolf.pentagram@gmail.com"]
-  spec.description   = %q{Rails extention of Dee the DI Container}
-  spec.summary       = %q{Rails extention of Dee the DI Container}
+  spec.description   = %q{Dee the DI Container for Rails}
+  spec.summary       = %q{Dee the DI Container for Rails}
   spec.homepage      = "https://github.com/yuya-takeyama/dee-rails"
   spec.license       = "MIT"
 
