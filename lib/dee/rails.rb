@@ -1,3 +1,4 @@
+require "dee"
 require "dee/rails/loader"
 require "dee/rails/railtie" if defined? Rails
 require "dee/rails/service_provider"
