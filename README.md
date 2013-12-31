@@ -1,5 +1,8 @@
 # dee-rails
 
+[![Build Status](https://travis-ci.org/yuya-takeyama/dee-rails.png?branch=develop)](https://travis-ci.org/yuya-takeyama/dee-rails)
+[![Coverage Status](https://coveralls.io/repos/yuya-takeyama/dee-rails/badge.png?branch=develop)](https://coveralls.io/r/yuya-takeyama/dee-rails?branch=develop)
+
 [Dee](https://github.com/yuya-takeyama/dee) the DI Container for Rails
 
 ## Installation
