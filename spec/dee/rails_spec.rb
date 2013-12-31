@@ -22,6 +22,10 @@ describe Dee::Rails do
         Dee::Rails.setup!
       end
 
+      after(:all) do
+        ::Rails = nil
+      end
+
       it 'should be Dee::Container' do
         expect(Dee.container).to be_a(Dee::Container)
       end
