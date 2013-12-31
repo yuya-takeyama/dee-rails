@@ -4,7 +4,7 @@ module Dee
       class << self
         def load!
           Dir.glob(providers_glob_path).each do |file|
-            require file
+            load file
           end
         end
 

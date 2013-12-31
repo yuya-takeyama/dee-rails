@@ -14,18 +14,18 @@ describe Dee::Rails do
   end
 
   context 'after Dee::Rails.setup! is called' do
+    before do
+      ::Rails = double('Rails')
+      ::Rails.stub('root').and_return(rails_root)
+
+      Dee::Rails.setup!
+    end
+
+    after do
+      ::Rails = nil
+    end
+
     describe 'Dee.container' do
-      before do
-        ::Rails = double('Rails')
-        ::Rails.stub('root').and_return(rails_root)
-
-        Dee::Rails.setup!
-      end
-
-      after(:all) do
-        ::Rails = nil
-      end
-
       it 'should be Dee::Container' do
         expect(Dee.container).to be_a(Dee::Container)
       end
