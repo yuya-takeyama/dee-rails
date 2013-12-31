@@ -14,7 +14,7 @@ module Dee
           end
 
           def providers_glob_path
-            File.join(providers_path, '*_provider.rb')
+            File.join(providers_path, '*_service_provider.rb')
           end
       end
     end
