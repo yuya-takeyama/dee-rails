@@ -25,4 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "coveralls"
+  # Workaround for rest-client dependency
+  # https://github.com/rest-client/rest-client/issues/235
+  spec.add_development_dependency "mime-types", "< 2"
 end
