@@ -1,6 +1,6 @@
 # Dee::Rails
 
-TODO: Write a gem description
+Dee the DI Container for Rails
 
 ## Installation
 
