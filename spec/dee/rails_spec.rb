@@ -52,5 +52,12 @@ describe Dee::Rails do
         expect(Dee['foo.factory']).to_not be_equal(Dee['foo.factory'])
       end
     end
+
+    describe 'Dee["foo.name"]=' do
+      it "should override Foo's name" do
+        Dee['foo.name'] = 'overridden'
+        expect(Dee['foo.singleton'].name).to eq('overridden')
+      end
+    end
   end
 end
