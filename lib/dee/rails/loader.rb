@@ -10,7 +10,7 @@ module Dee
 
         private
           def providers_path
-            File.join(Rails.root, 'app', 'providers')
+            File.join(::Rails.root, 'app', 'providers')
           end
 
           def providers_glob_path
