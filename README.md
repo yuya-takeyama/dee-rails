@@ -23,7 +23,7 @@ Or install it yourself as:
 Write your service provider using generator.
 
     $ rails g dee:service_provider foo
-		$ vi app/providers/foo_service_provider.rb
+    $ vi app/providers/foo_service_provider.rb
 
 ```ruby
 class FooServceProvider < Dee::Rails::ServiceProvider
