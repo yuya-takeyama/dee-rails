@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/yuya-takeyama/dee-rails/badge.png?branch=develop)](https://coveralls.io/r/yuya-takeyama/dee-rails?branch=develop)
 
 [Dee](https://github.com/yuya-takeyama/dee) the DI Container for Rails
+[![Analytics](https://ga-beacon.appspot.com/UA-12392004-6/yuya-takeyama/dee-rails)](https://github.com/igrigorik/ga-beacon)
 
 ## Installation
 
